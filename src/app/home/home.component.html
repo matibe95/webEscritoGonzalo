@@ -1,0 +1,30 @@
+<div class="light-mode px-6 py-12">
+  <div class="flex justify-between text-baseColor">
+    <section class="main_text flex flex-col gap-8 text-left">
+      <h1 class="text-4xl font-bold">
+        Administra Tus <span class="text-primary">Tareas de Soporte</span>
+        Online
+      </h1>
+      <section class="main_buttons_container flex text-center gap-4">
+        <form action="w-full">
+          <section class="flex flex-col gap-2 w-full">
+            <input type="text" name="titulo" placeholder="Inserte el titulo" />
+            <input
+              type="text"
+              name="contenido"
+              placeholder="Inserte el contenido"
+            />
+            <input type="text" name="autor" placeholder="Inserte el autor" />
+            <input type="text" name="estado" placeholder="Inserte el estado" />
+          </section>
+          <button
+            (click)="crearTarea()"
+            class="bg-primary text-black py-3 boton-principal"
+          >
+            Crear Tarea
+          </button>
+        </form>
+      </section>
+    </section>
+  </div>
+</div>
