@@ -12,6 +12,7 @@ export class HomeComponent {
   taskList: any = []
 
   ngOnInit(){
+    console.log('matibe')
     this.taskSS.getTasks().subscribe((res)=>{
       this.taskList = res
     })
